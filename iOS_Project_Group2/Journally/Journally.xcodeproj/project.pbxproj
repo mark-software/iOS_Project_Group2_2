@@ -11,6 +11,9 @@
 		4D141F9B1A1437F7002C9F36 /* MMSettingsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D141F991A1437F7002C9F36 /* MMSettingsVC.m */; };
 		4D141F9E1A143855002C9F36 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D141F9D1A143855002C9F36 /* LoginVC.m */; };
 		4D141FA01A1438AD002C9F36 /* rectangle.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D141F9F1A1438AD002C9F36 /* rectangle.png */; };
+		4D141FA61A145519002C9F36 /* loginButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D141FA51A145519002C9F36 /* loginButton.png */; };
+		4D141FA81A145961002C9F36 /* backgroundGray.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D141FA71A145961002C9F36 /* backgroundGray.png */; };
+		4D141FAA1A146053002C9F36 /* textures-gradient_00396352.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4D141FA91A146053002C9F36 /* textures-gradient_00396352.jpg */; };
 		4D51F6D01A1270280057C21A /* MMHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D51F6CB1A1270280057C21A /* MMHelper.m */; };
 		4D51F6D11A1270280057C21A /* MMDatabaseHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D51F6CD1A1270280057C21A /* MMDatabaseHelper.m */; };
 		4D51F6D21A1270280057C21A /* MMJournalEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D51F6CF1A1270280057C21A /* MMJournalEntry.m */; };
@@ -49,6 +52,9 @@
 		4D141F9C1A143855002C9F36 /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
 		4D141F9D1A143855002C9F36 /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
 		4D141F9F1A1438AD002C9F36 /* rectangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rectangle.png; sourceTree = "<group>"; };
+		4D141FA51A145519002C9F36 /* loginButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginButton.png; sourceTree = "<group>"; };
+		4D141FA71A145961002C9F36 /* backgroundGray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundGray.png; sourceTree = "<group>"; };
+		4D141FA91A146053002C9F36 /* textures-gradient_00396352.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "textures-gradient_00396352.jpg"; sourceTree = "<group>"; };
 		4D51F6CA1A1270280057C21A /* MMHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMHelper.h; sourceTree = "<group>"; };
 		4D51F6CB1A1270280057C21A /* MMHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMHelper.m; sourceTree = "<group>"; };
 		4D51F6CC1A1270280057C21A /* MMDatabaseHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDatabaseHelper.h; sourceTree = "<group>"; };
@@ -176,6 +182,9 @@
 		E51172991A05F36F00D601A9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4D141FA91A146053002C9F36 /* textures-gradient_00396352.jpg */,
+				4D141FA71A145961002C9F36 /* backgroundGray.png */,
+				4D141FA51A145519002C9F36 /* loginButton.png */,
 				4D141F9F1A1438AD002C9F36 /* rectangle.png */,
 				E5FD22771A127B5100DDD26E /* avatar.jpg */,
 				E5FD22781A127B5100DDD26E /* photo.jpg */,
@@ -284,8 +293,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D141FAA1A146053002C9F36 /* textures-gradient_00396352.jpg in Resources */,
+				4D141FA81A145961002C9F36 /* backgroundGray.png in Resources */,
 				E5FD22791A127B5100DDD26E /* avatar.jpg in Resources */,
 				E51172A51A05F36F00D601A9 /* Main.storyboard in Resources */,
+				4D141FA61A145519002C9F36 /* loginButton.png in Resources */,
 				E5FD227A1A127B5100DDD26E /* photo.jpg in Resources */,
 				4D141FA01A1438AD002C9F36 /* rectangle.png in Resources */,
 				E51172AA1A05F36F00D601A9 /* LaunchScreen.xib in Resources */,

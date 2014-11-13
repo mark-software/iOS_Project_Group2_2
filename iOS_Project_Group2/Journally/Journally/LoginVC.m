@@ -16,7 +16,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+//    CALayer *leftBorder = [CALayer layer];
+//    leftBorder.borderColor = [UIColor grayColor].CGColor;
+//    leftBorder.borderWidth = 1;
+//    leftBorder.frame = CGRectMake(0, -1, _emailField.frame.size.width, _emailField.frame.size.height+1);
+//    [_emailField.layer addSublayer:leftBorder];
+    
+    
+    _emailField.backgroundColor = [UIColor whiteColor];
+    _passwordField.backgroundColor = [UIColor whiteColor];
+    
 }
 
 - (void)didReceiveMemoryWarning {
