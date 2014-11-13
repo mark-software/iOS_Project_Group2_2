@@ -17,6 +17,7 @@
 		4D51F6D01A1270280057C21A /* MMHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D51F6CB1A1270280057C21A /* MMHelper.m */; };
 		4D51F6D11A1270280057C21A /* MMDatabaseHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D51F6CD1A1270280057C21A /* MMDatabaseHelper.m */; };
 		4D51F6D21A1270280057C21A /* MMJournalEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D51F6CF1A1270280057C21A /* MMJournalEntry.m */; };
+		4D636D4A1A146F4300CB6426 /* signup.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D636D491A146F4300CB6426 /* signup.png */; };
 		65C8579C12C4E2E9ABF47968 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E2F0E41A96678E8A2CC051A /* libPods.a */; };
 		E511729C1A05F36F00D601A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E511729B1A05F36F00D601A9 /* main.m */; };
 		E511729F1A05F36F00D601A9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E511729E1A05F36F00D601A9 /* AppDelegate.m */; };
@@ -61,6 +62,7 @@
 		4D51F6CD1A1270280057C21A /* MMDatabaseHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDatabaseHelper.m; sourceTree = "<group>"; };
 		4D51F6CE1A1270280057C21A /* MMJournalEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMJournalEntry.h; sourceTree = "<group>"; };
 		4D51F6CF1A1270280057C21A /* MMJournalEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMJournalEntry.m; sourceTree = "<group>"; };
+		4D636D491A146F4300CB6426 /* signup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signup.png; sourceTree = "<group>"; };
 		7C5E4FEBE04F89F7FE142133 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		8E2F0E41A96678E8A2CC051A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E51172961A05F36F00D601A9 /* Journally.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Journally.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -182,6 +184,7 @@
 		E51172991A05F36F00D601A9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4D636D491A146F4300CB6426 /* signup.png */,
 				4D141FA91A146053002C9F36 /* textures-gradient_00396352.jpg */,
 				4D141FA71A145961002C9F36 /* backgroundGray.png */,
 				4D141FA51A145519002C9F36 /* loginButton.png */,
@@ -302,6 +305,7 @@
 				4D141FA01A1438AD002C9F36 /* rectangle.png in Resources */,
 				E51172AA1A05F36F00D601A9 /* LaunchScreen.xib in Resources */,
 				E51172A71A05F36F00D601A9 /* Images.xcassets in Resources */,
+				4D636D4A1A146F4300CB6426 /* signup.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

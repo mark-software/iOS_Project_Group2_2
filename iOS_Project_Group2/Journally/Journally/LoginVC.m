@@ -40,7 +40,8 @@
 
 - (IBAction)loginAction:(id)sender {
     if([self fieldsAreEmpty]) {
-        [MMHelper showAlert:@"Please complete all fields" title:@"Incomplete fields"];
+//        [MMHelper showAlert:@"Please complete all fields" title:@"Incomplete fields"];
+        _loginErrorLabel.text = @"Please complete all fields";
         return;
     }
     
@@ -49,10 +50,14 @@
                                         if (user) {
                                             // Do stuff after successful login.
                                             [MMHelper showAlert:@"Logged In!" title:@"Success!"];
+                                            _loginErrorLabel.text = @"";
                                         } else {
                                             // The login failed. Check error to see why.
                                             
-                                            [MMHelper showAlert:@"Username or password incorrect!" title:@"Invalid credentials"];
+                                            
+                                            _loginErrorLabel.text = error.userInfo[@"error"];
+                                            
+//                                            [MMHelper showAlert:@"Username or password incorrect!" title:@"Invalid credentials"];
                                         }
                                     }];
 }
