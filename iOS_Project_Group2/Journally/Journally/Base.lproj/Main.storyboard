@@ -111,11 +111,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="trr-cb-gdz"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="700" y="501"/>
+            <point key="canvasLocation" x="668" y="512"/>
         </scene>
         <!--My Journal-->
         <scene sceneID="pmq-Si-vgm">
@@ -412,12 +413,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZWO-tw-DBc">
-                                <rect key="frame" x="91" y="108" width="97" height="30"/>
+                                <rect key="frame" x="56" y="108" width="166" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zsj-mI-eQu">
-                                <rect key="frame" x="427" y="108" width="97" height="30"/>
+                                <rect key="frame" x="395" y="108" width="161" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -439,7 +440,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="fnP-bF-Fwj">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="fnP-bF-Fwj">
                                 <rect key="frame" x="-12" y="188" width="612" height="412"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -471,9 +472,12 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="fnP-bF-Fwj" secondAttribute="width" id="ooR-3V-KdS"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Anonymous settings" id="RnY-ye-sXe">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="FB6-MA-5MX">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="FB6-MA-5MX">
                             <connections>
                                 <action selector="addNameAction:" destination="FCp-JR-LYd" id="CD3-wb-hzz"/>
                             </connections>
@@ -487,7 +491,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EG0-pQ-AJP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3912" y="259"/>
+            <point key="canvasLocation" x="3624" y="-1241"/>
         </scene>
         <!--Login-->
         <scene sceneID="mNT-F8-j1d">
@@ -586,11 +590,12 @@
                         <outlet property="emailField" destination="GKX-hE-yzh" id="ip0-uc-CJ8"/>
                         <outlet property="loginErrorLabel" destination="S7j-iG-3Ur" id="nRK-wL-ZS2"/>
                         <outlet property="passwordField" destination="DtD-ie-T3D" id="6cX-lo-hZF"/>
+                        <segue destination="BYZ-38-t0r" kind="modal" identifier="loggedin" id="bdb-nf-2y0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="urB-A5-0si" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2360" y="-696"/>
+            <point key="canvasLocation" x="652" y="-544"/>
         </scene>
         <!--Register-->
         <scene sceneID="idY-s9-GoZ">
@@ -663,11 +668,12 @@
                         <outlet property="emailField" destination="Zge-u0-cL4" id="dlW-UK-1KG"/>
                         <outlet property="errorLabel" destination="D4y-RP-Bay" id="dcu-eP-ssH"/>
                         <outlet property="passwordField" destination="u8a-9K-JLH" id="jlF-eG-17P"/>
+                        <segue destination="BYZ-38-t0r" kind="modal" identifier="registered" id="8d8-z7-ewd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nfk-WM-L4E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3142" y="-696"/>
+            <point key="canvasLocation" x="1818" y="-484"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="F8l-gg-035">
@@ -685,7 +691,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9dB-Fy-HB8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1483" y="-696"/>
+            <point key="canvasLocation" x="-594" y="-704"/>
         </scene>
     </scenes>
     <resources>
@@ -695,4 +701,7 @@
         <image name="photo.jpg" width="632" height="475"/>
         <image name="signup.png" width="274" height="38"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="bdb-nf-2y0"/>
+    </inferredMetricsTieBreakers>
 </document>

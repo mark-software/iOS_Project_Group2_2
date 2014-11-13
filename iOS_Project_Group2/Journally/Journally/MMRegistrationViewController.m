@@ -39,7 +39,8 @@
     [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         if (!error) {
             // Hooray! Let them use the app now.
-            [MMHelper showAlert:@"Login successful!" title:@"Success!"];
+//            [MMHelper showAlert:@"Login successful!" title:@"Success!"];
+             [self performSegueWithIdentifier:@"registered" sender:self];
             
         } else {
 //            NSString *errorString = [error userInfo][@"error"];

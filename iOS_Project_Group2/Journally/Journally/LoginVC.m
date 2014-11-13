@@ -49,7 +49,8 @@
                                     block:^(PFUser *user, NSError *error) {
                                         if (user) {
                                             // Do stuff after successful login.
-                                            [MMHelper showAlert:@"Logged In!" title:@"Success!"];
+//                                            [MMHelper showAlert:@"Logged In!" title:@"Success!"];
+                                            [self performSegueWithIdentifier:@"loggedin" sender:self];
                                             _loginErrorLabel.text = @"";
                                         } else {
                                             // The login failed. Check error to see why.
