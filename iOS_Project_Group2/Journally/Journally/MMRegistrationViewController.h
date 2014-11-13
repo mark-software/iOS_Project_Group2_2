@@ -17,5 +17,6 @@
 @property (weak, nonatomic) IBOutlet UITextField *confirmPasswordField;
 
 - (IBAction)signupAction:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *errorLabel;
 
 @end

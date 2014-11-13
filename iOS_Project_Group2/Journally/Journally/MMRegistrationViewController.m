@@ -17,6 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    _emailField.backgroundColor = [UIColor whiteColor];
+    _passwordField.backgroundColor = [UIColor whiteColor];
+    _confirmPasswordField.backgroundColor = [UIColor whiteColor];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -37,9 +42,10 @@
             [MMHelper showAlert:@"Login successful!" title:@"Success!"];
             
         } else {
-            NSString *errorString = [error userInfo][@"error"];
+//            NSString *errorString = [error userInfo][@"error"];
             // Show the errorString somewhere and let the user try again.
-            [MMHelper showAlert:errorString title:@"Error"];
+//            [MMHelper showAlert:errorString title:@"Error"];
+            _errorLabel.text = error.userInfo[@"error"];
         }
     }];
     
@@ -58,11 +64,13 @@
 
 - (IBAction)signupAction:(id)sender {
     if(![self passwordsMatch]) {
-        [MMHelper showAlert:@"Passwords do not match" title:@"Retype password"];
+        //[MMHelper showAlert:@"Passwords do not match" title:@"Retype password"];
+        _errorLabel.text = @"Passwords do not match";
         return;
     }
     if([self fieldsAreEmpty]) {
-        [MMHelper showAlert:@"Please complete all fields" title:@"Incomplete fields"];
+//        [MMHelper showAlert:@"Please complete all fields" title:@"Incomplete fields"];
+        _errorLabel.text = @"Please complete all fields";
         return;
     }
         [self registerUser:_emailField.text password:_passwordField.text];

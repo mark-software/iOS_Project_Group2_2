@@ -487,7 +487,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EG0-pQ-AJP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3593" y="338"/>
+            <point key="canvasLocation" x="3912" y="259"/>
         </scene>
         <!--Login-->
         <scene sceneID="mNT-F8-j1d">
@@ -518,18 +518,6 @@
                                     <rect key="frame" x="287" y="198" width="234" height="30"/>
                                 </variation>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sDz-wZ-EzG">
-                                <rect key="frame" x="165" y="397" width="271" height="38"/>
-                                <state key="normal" image="loginButton.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="285" y="286" width="234" height="30"/>
-                                </variation>
-                                <connections>
-                                    <action selector="loginAction:" destination="gOk-ZB-3aW" eventType="touchUpInside" id="rJR-CF-ik3"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kWx-H2-OpC">
                                 <rect key="frame" x="265" y="541" width="71" height="30"/>
                                 <state key="normal">
@@ -562,15 +550,29 @@
                                     <rect key="frame" x="287" y="170" width="234" height="30"/>
                                 </variation>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sDz-wZ-EzG">
+                                <rect key="frame" x="165" y="397" width="271" height="38"/>
+                                <state key="normal" image="loginButton.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="285" y="286" width="234" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="loginAction:" destination="gOk-ZB-3aW" eventType="touchUpInside" id="rJR-CF-ik3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="sDz-wZ-EzG" firstAttribute="width" secondItem="GKX-hE-yzh" secondAttribute="width" id="5cw-Za-CJQ"/>
                             <constraint firstAttribute="centerX" secondItem="Yi8-cC-pKO" secondAttribute="centerX" id="7Qt-gP-Vhn"/>
                             <constraint firstAttribute="centerX" secondItem="sDz-wZ-EzG" secondAttribute="centerX" id="EKc-dl-i6B"/>
                             <constraint firstAttribute="centerX" secondItem="S7j-iG-3Ur" secondAttribute="centerX" id="Y5u-Wr-19t"/>
                             <constraint firstAttribute="centerX" secondItem="DtD-ie-T3D" secondAttribute="centerX" id="ZsH-XO-3zc"/>
                             <constraint firstAttribute="centerX" secondItem="GKX-hE-yzh" secondAttribute="centerX" id="d7l-Az-5EC"/>
                             <constraint firstAttribute="centerX" secondItem="kWx-H2-OpC" secondAttribute="centerX" id="jor-LF-0fT"/>
+                            <constraint firstItem="sDz-wZ-EzG" firstAttribute="width" secondItem="DtD-ie-T3D" secondAttribute="width" id="pdY-rE-GMG"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Login" id="M5d-mq-mDH">
@@ -602,13 +604,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgroundGray.png" translatesAutoresizingMaskIntoConstraints="NO" id="sTJ-AX-bCN">
+                                <rect key="frame" x="0.0" y="-6" width="1433" height="1287"/>
+                            </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Password" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="u8a-9K-JLH">
-                                <rect key="frame" x="172" y="255" width="256" height="30"/>
+                                <rect key="frame" x="172" y="332" width="256" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Confirm Password" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="L1P-4f-Hz0">
+                                <rect key="frame" x="172" y="377" width="256" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zge-u0-cL4">
+                                <rect key="frame" x="172" y="285" width="256" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Register" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mbd-rf-76J">
+                                <rect key="frame" x="111" y="65" width="378" height="96"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="80"/>
+                                <color key="textColor" red="0.115324802" green="0.45130609090000001" blue="0.97845435140000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZCK-nd-wFv">
-                                <rect key="frame" x="172" y="371" width="256" height="44"/>
+                                <rect key="frame" x="179" y="437" width="242" height="38"/>
                                 <state key="normal" image="signup.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -616,42 +637,37 @@
                                     <action selector="signupAction:" destination="LyS-cq-hMn" eventType="touchUpInside" id="P3b-6S-aJG"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Confirm Password" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="L1P-4f-Hz0">
-                                <rect key="frame" x="172" y="293" width="256" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zge-u0-cL4">
-                                <rect key="frame" x="172" y="215" width="256" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Register" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mbd-rf-76J">
-                                <rect key="frame" x="111" y="84" width="378" height="96"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="80"/>
-                                <color key="textColor" red="0.115324802" green="0.45130609090000001" blue="0.97845435140000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D4y-RP-Bay">
+                                <rect key="frame" x="9" y="494" width="585" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="u8a-9K-JLH" firstAttribute="width" secondItem="ZCK-nd-wFv" secondAttribute="width" id="GhP-MX-L8N"/>
+                            <constraint firstAttribute="centerX" secondItem="D4y-RP-Bay" secondAttribute="centerX" id="IVY-NF-vE2"/>
                             <constraint firstAttribute="centerX" secondItem="L1P-4f-Hz0" secondAttribute="centerX" id="XBk-lW-uG7"/>
                             <constraint firstAttribute="centerX" secondItem="mbd-rf-76J" secondAttribute="centerX" id="cLQ-1m-Exa"/>
                             <constraint firstAttribute="centerX" secondItem="u8a-9K-JLH" secondAttribute="centerX" id="dma-Gy-yiv"/>
                             <constraint firstAttribute="centerX" secondItem="Zge-u0-cL4" secondAttribute="centerX" id="eef-2S-hCj"/>
+                            <constraint firstItem="L1P-4f-Hz0" firstAttribute="width" secondItem="ZCK-nd-wFv" secondAttribute="width" id="fQh-CY-7yI"/>
                             <constraint firstAttribute="centerX" secondItem="ZCK-nd-wFv" secondAttribute="centerX" id="uiT-dp-Y6E"/>
+                            <constraint firstItem="Zge-u0-cL4" firstAttribute="width" secondItem="ZCK-nd-wFv" secondAttribute="width" id="wda-hV-Cmf"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Register" id="X82-G3-Rfe"/>
                     <connections>
                         <outlet property="confirmPasswordField" destination="L1P-4f-Hz0" id="II0-LT-Rbi"/>
                         <outlet property="emailField" destination="Zge-u0-cL4" id="dlW-UK-1KG"/>
+                        <outlet property="errorLabel" destination="D4y-RP-Bay" id="dcu-eP-ssH"/>
                         <outlet property="passwordField" destination="u8a-9K-JLH" id="jlF-eG-17P"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nfk-WM-L4E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3143" y="-667"/>
+            <point key="canvasLocation" x="3142" y="-696"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="F8l-gg-035">
